@@ -181,7 +181,7 @@ TBitField TBitField::operator~(void) // отрицание
     TBitField tmp(BitLen);
 
     for (int i = 0; i < BitLen; i++) {
-        if (tmp.GetBit(i)) {
+        if (this->GetBit(i)) {
             tmp.ClrBit(i);
         }
         else
